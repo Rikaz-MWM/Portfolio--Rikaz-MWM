@@ -312,46 +312,6 @@
   }
   .skill-tag:hover { border-color: var(--gold); color: var(--gold); background: rgba(125,183,255,0.05); }
 
-  /* EXPERIENCE */
-  #experience { background: var(--dark3); }
-  .timeline { position: relative; max-width: 820px; }
-  .timeline::before {
-    content: '';
-    position: absolute; left: 7px; top: 8px; bottom: 8px;
-    width: 1px; background: rgba(125,183,255,0.15);
-  }
-  .timeline-item { position: relative; padding: 0 0 56px 48px; }
-  .timeline-item:last-child { padding-bottom: 0; }
-  .timeline-dot {
-    position: absolute; left: 0; top: 6px;
-    width: 15px; height: 15px; border-radius: 50%;
-    background: var(--dark3); border: 2px solid var(--gold);
-  }
-  .timeline-item.current .timeline-dot { background: var(--gold); box-shadow: 0 0 0 4px rgba(125,183,255,0.15); }
-  .timeline-period {
-    font-family: 'Space Mono', monospace; font-size: 11px;
-    letter-spacing: 2px; color: var(--gold); text-transform: uppercase;
-    margin-bottom: 8px; display: flex; align-items: center; flex-wrap: wrap; gap: 10px;
-  }
-  .timeline-badge {
-    font-family: 'Space Mono', monospace; font-size: 9px;
-    letter-spacing: 1px; color: #4ade80;
-    border: 1px solid rgba(74,222,128,0.4);
-    padding: 2px 8px; text-transform: uppercase;
-  }
-  .timeline-role {
-    font-family: 'Bebas Neue', sans-serif; font-size: 30px;
-    letter-spacing: 1px; color: var(--cream); margin-bottom: 4px;
-  }
-  .timeline-company {
-    font-size: 17px; font-style: italic; font-weight: 300;
-    color: var(--text-muted); margin-bottom: 16px;
-  }
-  .timeline-desc { font-size: 15px; line-height: 1.8; color: rgba(245,240,232,0.65); font-weight: 300; }
-  .timeline-desc ul { margin-top: 10px; display: flex; flex-direction: column; gap: 8px; }
-  .timeline-desc li { list-style: none; position: relative; padding-left: 20px; }
-  .timeline-desc li::before { content: '→'; position: absolute; left: 0; color: var(--gold); }
-
   /* SERVICES */
   #services { background: var(--dark); }
   .services-grid {
@@ -704,7 +664,6 @@
   <a href="#" class="nav-logo">Rikaz MWM</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
     <li><a href="#clients">Clients</a></li>
@@ -834,67 +793,10 @@
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-header reveal">
-    <div class="section-num">02</div>
-    <h2 class="section-title">WORK <span>EXPERIENCE</span></h2>
-  </div>
-  <div class="timeline">
-
-    <div class="timeline-item current reveal">
-      <div class="timeline-dot"></div>
-      <div class="timeline-period">May 2026 – Present · 3 mos <span class="timeline-badge">Current</span></div>
-      <div class="timeline-role">Commercial Engineer</div>
-      <div class="timeline-company">POWERCHINA · Al Wakrah, Qatar · Full-time</div>
-      <div class="timeline-desc">
-        <p>Specialized in the commercial and technical verification of MEP systems for the Peaking Units project in Qatar, with a primary focus on accuracy in material quantification and cost estimation.</p>
-        <ul>
-          <li>Detailed MEP quantity take-offs across electrical, mechanical & piping infrastructure</li>
-          <li>Take-off auditing & cross-checking between design drawings, BOQ and site requirements</li>
-          <li>Technical documentation to support procurement and cost management</li>
-          <li>Design-to-site alignment in collaboration with the site engineering team</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="timeline-item reveal reveal-delay-1">
-      <div class="timeline-dot"></div>
-      <div class="timeline-period">Feb 2024 – Apr 2026 · 2 yrs 3 mos</div>
-      <div class="timeline-role">Procurement & QS Coordinator</div>
-      <div class="timeline-company">The Royal Light · Doha, Qatar · Full-time</div>
-      <div class="timeline-desc">
-        <ul>
-          <li>Quantity take-offs from AutoCAD drawings for electrical & fit-out works across 2–3 concurrent projects</li>
-          <li>Prepared detailed BOQs based on client RFQs and project drawings</li>
-          <li>Prepared cost proposals, material quotations, and technical submittals</li>
-          <li>Handled materials purchasing, supplier coordination and quotation analysis</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="timeline-item reveal reveal-delay-2">
-      <div class="timeline-dot"></div>
-      <div class="timeline-period">Jan 2020 – Jan 2024 · 4 yrs 1 mo</div>
-      <div class="timeline-role">Project Manager & Assistant Quantity Surveyor</div>
-      <div class="timeline-company">Electron Engineering Services · Kandy, Sri Lanka · Full-time</div>
-      <div class="timeline-desc">
-        <ul>
-          <li>Prepared BOQs and quantity take-offs for 15+ electrical & smart automation projects</li>
-          <li>Assisted in tender documentation, cost estimates and project budgets</li>
-          <li>Managed subcontractor interim payment applications and certification</li>
-          <li>Supported variation order evaluation and final account preparation</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</section>
-
 <!-- SERVICES -->
 <section id="services">
   <div class="section-header reveal">
-    <div class="section-num">03</div>
+    <div class="section-num">02</div>
     <h2 class="section-title">WHAT I <span>DO</span></h2>
   </div>
   <div class="services-grid">
@@ -965,7 +867,7 @@
 <!-- PORTFOLIO -->
 <section id="portfolio">
   <div class="section-header reveal">
-    <div class="section-num">04</div>
+    <div class="section-num">03</div>
     <h2 class="section-title">SELECTED <span>WORK</span></h2>
   </div>
 
@@ -1110,7 +1012,7 @@
 <!-- CLIENTS -->
 <section id="clients">
   <div class="section-header reveal">
-    <div class="section-num">05</div>
+    <div class="section-num">04</div>
     <h2 class="section-title">CLIENT <span>WORK</span></h2>
   </div>
   <div class="clients-grid">
@@ -1150,7 +1052,7 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-header reveal">
-    <div class="section-num">06</div>
+    <div class="section-num">05</div>
     <h2 class="section-title">LET'S <span>CONNECT</span></h2>
   </div>
   <div class="contact-grid">
